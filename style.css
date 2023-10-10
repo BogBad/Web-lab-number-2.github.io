@@ -1,0 +1,249 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+}
+
+.photo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 7%;
+}
+
+.photo-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 7%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    min-width: 65%;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-height: 45vh;
+    background: #ffffff;
+}
+
+.container img{
+    max-height: 375px;
+    max-width: 30%;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+.container-2{
+    display: flex;
+    min-width: 65%;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-height: 45vh;
+    background: #ffffff;
+}
+
+.container-2 img{
+    max-width: 90%;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+.discount-icon {
+    font-size: 24px; 
+    margin-left: 5px;
+    transition: transform 0.3s; 
+}
+
+.discount-icon:hover {
+    transform: scale(1.2); 
+}
+
+header {
+    background: #000;
+    padding: 35px 60px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 20vh;
+}
+
+header .logo {
+    font-size: 48px;
+    color: #ffb703;
+    font-family: "Dancing Script", cursive;
+    transition: color 0.3s; 
+}
+header .logo:hover {
+    color: #fff; 
+}
+
+.discount-banner {
+    font-family: "Dancing Script", cursive;
+    background: #ffcc00; 
+    padding: 14px 20px 38px 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 100px;
+    position: relative;
+    min-width: 120px;
+    max-height: 18px;
+    display: inline-block;
+    transition: background 0.3s;
+    min-width: 15%;
+    
+}
+
+.discount-banner:hover {
+    background: #fff; 
+    transition: color 0.3s; 
+}
+
+.discount-banner::after {
+    position: absolute;
+    font-size: 24px; 
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.box_1{
+    min-height: 80vh;
+    display: flex;
+    background: red;
+}
+
+.box_2{
+   display: flex;
+   min-height: 70vh;
+   flex-direction: row;
+   background: blue; 
+   flex: 1;
+}
+
+main{
+
+	display: flex;
+	flex-grow: 1;
+    flex-direction: column;
+    /* background: #8c7e5b */
+}
+nav{
+	min-width: 15%;
+	text-align: left;
+	background: #ffb703;
+	padding-left: 50px;
+	justify-content: right;
+	padding-top: 100px;
+    display: flex;
+    align-items: center;
+}
+nav li{
+	list-style: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+nav a{
+    font-family: "Lato", sans-serif; 
+	font-size: 20px;
+	color:#000;
+	text-decoration: none;
+	position: relative;
+    display: flex;
+    align-items: center;
+} 
+
+.active::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: #000;
+    transform: translateX(-50px); 
+    top: 8px;
+}
+
+
+.side-block{
+    display: flex;
+    min-width: 80%;
+    flex-direction: column;
+}
+
+.text{
+    display: flex;
+    min-width: 35%;
+    flex-direction: column;
+    background: #000;
+}
+
+hr {
+    padding: 0; 
+    margin: 5px 0; 
+    background: #000;
+}
+
+.contact-form_1_side-block{
+    display: flex;
+    min-height: 38vh;
+    flex-direction: column;
+    background: #ffb703;
+}
+
+.contact-form_2_side-block{
+    display: flex;
+    min-height: 62vh;
+    flex-direction: column;
+    background: #ffb703;
+    flex-grow: 1;
+}
+
+footer{
+    font-family: "Lato", sans-serif; 
+	background: #000;
+    color: #fff;
+	padding-right: 60px;
+	padding-bottom: 30px;
+}
+
+footer .title{
+	font-size: 26px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right: 10px;
+	background: #FCB300;
+	border-radius: 0 0 20px 20px;
+	position: absolute;
+	text-align: end;
+	width:150px;
+}
+
+footer .info {
+    margin-top: 70px;
+    font-size: 22px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    margin-left: auto; 
+}
+
+footer .info span {
+    padding-top: 10px;
+}
+
